@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C42E84A-AC10-4CBB-A27F-EFEA3683088F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SfSoft.Model</RootNamespace>
+    <AssemblyName>SfSoft.Model</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aspnet_Roles.cs" />
+    <Compile Include="DRP_Balance_Dir.cs" />
+    <Compile Include="DRP_Balance_Dir_Detail.cs" />
+    <Compile Include="DRP_Content_Temp.cs" />
+    <Compile Include="DRP_Customer.cs" />
+    <Compile Include="DRP_Distributor.cs" />
+    <Compile Include="DRP_Invite_Arts.cs" />
+    <Compile Include="DRP_Invite_My_Arts.cs" />
+    <Compile Include="DRP_Login_logs.cs" />
+    <Compile Include="DRP_Logistics.cs" />
+    <Compile Include="DRP_Order.cs" />
+    <Compile Include="DRP_Order_Cancels.cs" />
+    <Compile Include="DRP_Order_Detail.cs" />
+    <Compile Include="DRP_Products.cs" />
+    <Compile Include="DRP_Products_Detail.cs" />
+    <Compile Include="DRP_Receives.cs" />
+    <Compile Include="DRP_Sales_Arts.cs" />
+    <Compile Include="DRP_Sales_My_Arts.cs" />
+    <Compile Include="Emc_logs.cs" />
+    <Compile Include="Emc_Msg_Interface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pub_ACFlow.cs" />
+    <Compile Include="Pub_AttFiles.cs" />
+    <Compile Include="Pub_AuditFlow.cs" />
+    <Compile Include="Pub_AuditFlow_Dept.cs" />
+    <Compile Include="Pub_AuditRec.cs" />
+    <Compile Include="Pub_AuditResult.cs" />
+    <Compile Include="Pub_BaseData.cs" />
+    <Compile Include="Pub_BaseData_Classc.cs" />
+    <Compile Include="Pub_CallList.cs" />
+    <Compile Include="Pub_CallList_Add.cs" />
+    <Compile Include="Pub_CallType.cs" />
+    <Compile Include="Pub_Company.cs" />
+    <Compile Include="Pub_ComputerKey.cs" />
+    <Compile Include="Pub_Data_Acl.cs" />
+    <Compile Include="Pub_Data_Acl_Users.cs" />
+    <Compile Include="Pub_Data_Assign.cs" />
+    <Compile Include="Pub_Data_doc.cs" />
+    <Compile Include="Pub_Dept.cs" />
+    <Compile Include="Pub_DeptUsers.cs" />
+    <Compile Include="Pub_EmpInfo.cs" />
+    <Compile Include="Pub_EmpInfo_Holiday.cs" />
+    <Compile Include="Pub_FunDef.cs" />
+    <Compile Include="Pub_Help.cs" />
+    <Compile Include="Pub_Modules.cs" />
+    <Compile Include="Pub_Modules_Fun.cs" />
+    <Compile Include="Pub_Msn.cs" />
+    <Compile Include="Pub_Msn_Addressee.cs" />
+    <Compile Include="Pub_Roles_Company.cs" />
+    <Compile Include="Pub_Roles_Fun.cs" />
+    <Compile Include="Pub_SignFile.cs" />
+    <Compile Include="Pub_Surrogate.cs" />
+    <Compile Include="Pub_SysParameter.cs" />
+    <Compile Include="Pub_UnSystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

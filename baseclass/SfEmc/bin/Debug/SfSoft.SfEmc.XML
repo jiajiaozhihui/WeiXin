@@ -1,0 +1,1763 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SfSoft.SfEmc</name>
+    </assembly>
+    <members>
+        <member name="M:SfSoft.SfEmc.QRCode.WriteBarcode(System.String,System.String)">
+            <summary>
+            生成二维图像
+            </summary>
+            <param name="content">要转换二维码的文字</param>
+            <param name="path">存储的二维码路径及名称</param>
+            <returns>1:参数不以为空</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.QRCode.ReadBarcode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DBTools.CheckTable(System.String)">
+            <summary>
+            验证表是否存在
+            </summary>
+            <param name="tablename">表名</param>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DBTools.CheckFieldName(System.String,System.String)">
+            <summary>
+            验证字段是否存在
+            </summary>
+            <param name="tablename">表名</param>
+            <param name="tablename">字段名</param>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DBTools.CreateField(System.String,System.String,System.String,System.String)">
+            <summary>
+            新建字段
+            </summary>
+            <param name="tablename">表名</param>
+            <param name="fieldname">字段名</param>
+            <param name="fieldtype">字段类型</param>
+             <param name="fieldtype">字段长度，字段类型为字符时才有效</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.DBTools.UpdateField(System.String,System.String,System.String,System.String)">
+            <summary>
+            修改字段
+            </summary>
+            <param name="tablename">表名</param>
+            <param name="fieldname">字段名</param>
+            <param name="fieldtype">字段类型</param>
+             <param name="fieldtype">字段长度，字段类型为字符时才有效</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.DBTools.DropField(System.String,System.String)">
+            <summary>
+            删除字段
+            </summary>
+            <param name="tablename">表名</param>
+            <param name="fieldname">字段名</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.DBTools.Get(System.String,System.String,System.Action{System.Net.HttpStatusCode,System.String})">
+            <summary> 
+            GET请求 
+            </summary> 
+            <param name="url">请求地址</param> 
+            <param name="param">参数</param> 
+            <param name="onComplete">完成后执行的操作(可选参数，通过此方法可以获取到HTTP状态码)</param> 
+            <returns>请求返回结果</returns> 
+        </member>
+        <member name="M:SfSoft.SfEmc.DBTools.HttpRequest(System.Net.HttpWebRequest,System.Action{System.Net.HttpStatusCode,System.String})">
+            <summary> 
+            请求的主体部分（由此完成请求并返回请求结果） 
+            </summary> 
+            <param name="request">请求的对象</param> 
+            <param name="onComplete">完成后执行的操作(可选参数，通过此方法可以获取到HTTP状态码)</param> 
+            <returns>请求返回结果</returns> 
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitMID">
+            <summary>
+            初始化当前模块hfMID值
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnView">
+            <summary>
+            查阅
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnNew">
+            <summary>
+            新建
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnEdit">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnDelete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnPrint">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnFresh">
+            <summary>
+            刷新
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnClose">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnHelp">
+            <summary>
+            帮助
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnSave">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnShowSearch">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnSearch">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnClearCd">
+            <summary>
+            清空条件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnSubmit">
+            <summary>
+            提交
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnCancel">
+            <summary>
+            撤消
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnSubCancel">
+            <summary>
+            申请撤消
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnApprove">
+            <summary>
+            审批
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnAppRecord">
+            <summary>
+            审批记录
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnApproveYes">
+            <summary>
+            审批同意
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnApproveNo">
+            <summary>
+            审批不同意
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnApproveClose">
+            <summary>
+            审批工具栏关闭
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnApproval">
+            <summary>
+            修改审批人
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnCurCat">
+            <summary>
+            新增本级栏目
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnNextCat">
+            <summary>
+            新增下级栏目
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnMgt">
+            <summary>
+            管理
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnExport">
+            <summary>
+            导出
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.NewTsbtnReturn">
+            <summary>
+            返回
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitToolbars">
+            <summary>
+            初始化标准工具栏
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitOthersToolbars">
+            <summary>
+            初始化其它工具栏
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitListToolsBars">
+            <summary>
+            初始化管理列表工具栏,查阅，新建，修改，删除
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitPortToolsBars">
+            <summary>
+            初始化管理列表工具栏,查阅，新建，修改，删除
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitBrowseToolbars">
+            <summary>
+            初始化信息浏览工具栏
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitEditToolbars">
+            <summary>
+            初始化普通修改页工具栏
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitApproveEditPageToolbars">
+            <summary>
+            初始化审批修改页工具栏
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitBaseToolsBars">
+            <summary>
+            初始化基础列表工具栏
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitBaseListToolsBars">
+            <summary>
+            初始化基础列表工具栏，打印，刷新，帮助
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitBaseDetailToolsBars">
+            <summary>
+            初始化基础详细工具栏，打印，刷新，关闭，帮助
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitSearchToolsBars">
+            <summary>
+            初始化基础列表工具栏，查询
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitApproveToolsBars">
+            <summary>
+            初始化审批工具栏，审批同意，审批不同意，关闭
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtInitFreeToolsBarsByButtons(System.String)">
+            <summary>
+            根据buttons类型名称产生工具栏按扭，用','号隔开
+            </summary>
+            <param name="buttons">按扭名称</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtApproveOrder(System.String)">
+            <summary>
+            单据审批
+            </summary>
+            <param name="AuditSign">同意=Y，不同意=N</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtPageAccess">
+            <summary>
+            初化页面访问权限
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtButtonAccess">
+            <summary>
+            初始化按扭权限
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtButtonShow">
+            <summary>
+            初始化按扭显示,如果是mode =view 时，只显示基础按扭
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.CheckPageAccess(System.String)">
+            <summary>
+            页面权限
+            </summary>
+            <param name="FunID">功能ID，可以用“，”号分隔开多个</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.CheckButtonAccess(System.String)">
+            <summary>
+            按扭权限
+            </summary>
+            <param name="FunID">功能ID</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtCloseClientEvent">
+            <summary>
+            关闭窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtNewClientEvent">
+            <summary>
+            新建窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtReturnClientEvent">
+            <summary>
+            返回窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtCloseFreshClientEvent">
+            <summary>
+            表单修改后的 关闭窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtShowIframe(System.String,System.String,System.String,System.String)">
+            <summary>
+            弹开窗口 jquery
+            </summary>
+            <param name="title">窗口标题</param>
+            <param name="contentUrl">页面路径</param>
+            <param name="width">窗口宽度</param>
+            <param name="height">窗口高度</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtShowIframe(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            弹开窗口 jquery
+            </summary>
+            <param name="title">窗口标题</param>
+            <param name="parent">父窗口中弹开 parent. or parent.parent.</param>
+            <param name="width">窗口宽度</param>
+            <param name="width">窗口宽度</param>
+            <param name="height">窗口高度</param>
+            
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtAddTabIframe(System.String,System.String,System.String)">
+            <summary>
+            增加Tab页 jquery
+            </summary>
+            <param name="title">窗口标题</param>
+            <param name="contentUrl">路径</param>
+            <param name="icon">tab页图标</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBasePage.VtShowTips(System.String,System.String,System.String)">
+            <summary>
+            浮动DIV定时显示提示信息,如操作成功, 失败等 
+            </summary>
+            <param name="tips">string tips (提示的内容) </param>
+            <param name="height"> height 显示的信息距离浏览器顶部的高度 </param>
+            <param name="time"> 显示的时间(按秒算), time > 0</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBrowseBasePage.VtNewClientEvent">
+            <summary>
+            新建军窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBrowseBasePage.VtNew">
+            <summary>
+            新建
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcBrowseBasePage.VtEdit">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ChangePathToModulesID(System.String)">
+            <summary>
+            把路径转换成模块ID
+            </summary>
+            <param name="filepath">当前页面路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetModulesName(System.String)">
+            <summary>
+            取的模块名称
+            </summary>
+            <param name="modulesID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetModulesIcon(System.String)">
+            <summary>
+            取的模块图标
+            </summary>
+            <param name="modulesID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetCheckedDataKey(System.Web.UI.WebControls.GridView,System.Int32,System.Boolean)">
+            <summary>
+            取的gridview 中的选中的第一行第columnIndex列值
+            </summary>
+            <param name="gv"></param>
+            <param name="columnIndex">列</param>
+             <param name="isAll">是否所有选中行</param>
+            <returns>如果isAll是否所有，如果所有返回以，号为分格的字符串</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetCheckedDataKey(System.Web.UI.WebControls.GridView,System.String,System.Boolean)">
+            <summary>
+            取的gridview 中的选中的第一行checkboxId列值
+            </summary>
+            <param name="gv"></param>
+            <param name="columnIndex">列</param>
+            <param name="isAll">是否所有选中行</param>
+            <returns>如果isAll是否所有，如果所有返回以，号为分格的字符串</returns>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.GetModulesNoteInfoByFilePath(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.LockUserLogin(System.String,System.String)">
+            <summary>
+            锁定还是取消锁定
+            </summary>
+            <param name="UserID">用户GUID</param>
+            <param name="YN">true 锁定，false取消锁定</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getDeptNameByID(System.Int32)">
+            <summary>
+            取部门名
+            </summary>
+            <param name="DeptID">部门ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getDeptNoNameByID(System.Int32)">
+            <summary>
+            取部门编码
+            </summary>
+            <param name="DeptID">部门ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getCompanyNameByID(System.String)">
+            <summary>
+            取公司名称
+            </summary>
+            <param name="DeptID">公司ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getUserCnNameByID(System.String)">
+            <summary>
+            取用户中文名
+            </summary>
+            <param name="UserID">用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getPositionsByID(System.String)">
+            <summary>
+            取用户职位
+            </summary>
+            <param name="UserID">用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getUserIDNameByID(System.String)">
+            <summary>
+            取用户ID,根据姓名
+            </summary>
+            <param name="CnName">姓名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getUserGUIDByID(System.String)">
+            <summary>
+            取用户GUID
+            </summary>
+            <param name="ID">用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getUserNameByID(System.String)">
+            <summary>
+            取用户名
+            </summary>
+            <param name="ID">用户ID</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.getRoleIDByRoleName(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.getDeptInfoByUserID(System.String,System.String)">
+            <summary>
+            根据用户ID取的部门信息
+            </summary>
+            <param name="UserID"></param>
+            <param name="FilialeID"></param>
+            <returns>hashtable key：DeptID,DeptName,UserDeptKind,FilialeID</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.getDeptInfoByUserID(System.String,System.String,System.String,System.Web.UI.WebControls.DropDownList)">
+            <summary>
+            根据用户取的公司ID 
+            </summary>
+            <param name="UserID">选择用户ID</param>
+            <param name="FilialeID"></param>
+             <param name="CurDeptID">当前用户所在部门，在选择用户没有部门时代替</param>
+            <param name="ddlDept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetUsersDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            初始化用户下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetAllUsersDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            初始化用户下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetDropDownListUserID(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            设置用户下拉框中的人员
+            </summary>
+            <param name="ddl"></param>
+            <param name="UserID"></param>
+            <param name="CnName"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetDropDownListDeptID(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            设置部门下拉框中的部门
+            </summary>
+            <param name="ddl"></param>
+            <param name="UserID"></param>
+            <param name="CnName"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetUsersAllDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            初始化用户下拉列表的值,包含离职人员
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetUsersIDDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            初始化用户下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetToDoUsersIDDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            初始化待分配用户下拉列表的值
+            </summary>
+            <param name="ddlList"></param>
+            <param name="DeptID"></param>
+            <param name="FilialeID"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetDeptIDByManagerID(System.String,System.String)">
+            <summary>
+            取的用户所管理的部门ID串，用","号分开
+            </summary>
+            <param name="UserID"></param>
+            <param name="FilialeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetAllUsersIDDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            初始化用户下拉列表的值,包括锁定用户
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetUsersIDByDeptIDDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            通过部门ID获取部门下的用户
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.GetDeptDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.GetDeptIDDropDownList(System.Web.UI.WebControls.DropDownList,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetAclDeptDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            初始化部门有数据权限控制
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetAclDeptDropDownList(System.Data.DataSet,System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            初始化部门有数据权限控制
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.GetAclDeptSelectDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String,System.String,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.GetDeptListBox(System.Web.UI.WebControls.ListBox,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetFilialeDropDownList(System.Web.UI.WebControls.DropDownList)">
+            <summary>
+            初始化公司下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.GetFilialeIDDropDownList(System.Web.UI.WebControls.DropDownList)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetFilialeIDOtherDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            特殊处理：在制作办公采购计划中，深圳公司只能从深圳公司的用品目录中选择
+             modi ：gouzg
+             2009-03-10
+            </summary>
+            <param name="ddlList">DropDownList</param>
+            <param name="iUnitID">制单用户所属的公司</param>
+            <param name="unitIds">单位划分集合：该参数在web.config中设置，只需要设置广州公司，格式：4;40;</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetUnitQuery(System.String,System.String)">
+            <summary>
+             特殊处理：返回查询脚本
+             modi ：gouzg
+             2009-03-10
+            </summary>
+            <param name="unitIds">单位划分集合：该参数在web.config中设置，只需要设置广州公司，格式：4;40;</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.GetFilialeIDDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetFlowDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            初始化事务分类选下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetFreeFormDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            初始化自定义表单选下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.MakeTree(System.Data.DataTable,System.String,System.String,System.String,System.String,System.Web.UI.WebControls.DropDownList,System.Int32)">
+            
+            <summary> 
+            绑定生成一个有树结构的下拉菜单 
+            </summary> 
+            <param name="dtNodeSets">菜单记录数据所在的表</param> 
+            <param name="strParentColumn">表中用于标记父记录的字段</param> 
+            <param name="strRootValue">第一层记录的父记录值(通常设计为0或者-1或者Null)用来表示没有父记录</param> 
+            <param name="strIndexColumn">索引字段，也就是放在DropDownList的Value里面的字段</param> 
+            <param name="strTextColumn">显示文本字段，也就是放在DropDownList的Text里面的字段</param> 
+            <param name="drpBind">需要绑定的DropDownList</param> 
+            <param name="i">用来控制缩入量的值，请输入-1</param> 
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.Data.DataSet)">
+            <summary>
+            初始化基础数据下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataDropDownListS(System.Web.UI.WebControls.DropDownList,System.String,System.Data.DataSet)">
+            <summary>
+            初始化基础数据下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String,System.Data.DataSet)">
+            <summary>
+            初始化基础数据下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataEptDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.Data.DataSet)">
+            <summary>
+            初始化基础数据下拉列表的值,有空选
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataEptDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            初始化基础数据下拉列表的值,有空选
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataIDEptDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            初始化基础数据下拉列表的值,有空选
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataCheckBoxList(System.Web.UI.WebControls.CheckBoxList,System.String,System.Data.DataSet)">
+            <summary>
+            初始化基础数据多选框列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataCheckBoxList(System.Web.UI.WebControls.CheckBoxList,System.String)">
+            <summary>
+            初始化基础数据多选框列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataRadioButtonList(System.Web.UI.WebControls.RadioButtonList,System.String)">
+            <summary>
+            初始化基础数据多选框列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataRadioButtonList(System.Web.UI.WebControls.RadioButtonList,System.String,System.Data.DataSet)">
+            <summary>
+            初始化基础数据多选框列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataRadioButtonList(System.Web.UI.WebControls.RadioButtonList,System.String,System.String,System.Data.DataSet)">
+            <summary>
+            初始化基础数据多选框列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowBaseDataDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+            <summary>
+            显示页面中设置下拉框的当前选项
+            </summary>
+            <param name="ddlList">DropDownList</param>
+            <param name="RefValue">参数代码</param>
+            <param name="RefText">参数名</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            显示页面中设置下拉框的当前选项
+            </summary>
+            <param name="ddlList">DropDownList</param>
+            <param name="RefValue">参数代码</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowRadioButtonList(System.Web.UI.WebControls.RadioButtonList,System.String)">
+            <summary>
+            显示页面中设置单选框的当前选项
+            </summary>
+            <param name="rblList">RadioButtonList</param>
+            <param name="RefValue">参数代码</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowCheckBoxList(System.Web.UI.WebControls.CheckBoxList,System.String)">
+            <summary>
+            显示页面中设置多选框的当前选项
+            </summary>
+            <param name="cblList">CheckBoxList</param>
+            <param name="RefValue">参数代码,可用逗号”，“隔开</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetBaseDataSelectDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.Data.DataSet)">
+            <summary>
+            初始化基础数据下拉列表的值,有空选
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SendMsn(System.String,System.String,System.String,System.Data.DataTable)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="UserID">发信人ID</param>
+            <param name="CnName">发信人姓名</param>
+            <param name="msn">消息内容</param>
+            <param name="msndt">收信人列表</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SendMsn(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="UserID">发信人ID</param>
+            <param name="CnName">发信人姓名</param>
+            <param name="msn">消息内容</param>
+            <param name="ContactIDs">收信人ID，“，”隔开</param>
+            <param name="ContactIDs">收信人名，“，”隔开</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SendMSN(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            发送单个收信人消息
+            </summary>
+            <param name="msg">消息内容</param>
+            <param name="Addressee">收信人</param>
+            <param name="AddresseeID">收信人ID</param>
+            <param name="UserID">发信人ID</param>
+            <param name="CnName">发信人</param>
+            <param name="Remark">备注，没有为空</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SendMSN(System.String,System.Data.DataTable,System.String,System.String,System.String)">
+            <summary>
+            发送多个收信人消息
+            </summary>
+            <param name="msg">消息内容</param>
+            <param name="DataTable dt">收信人  实例DataTable dt = EmcCommon.CreateMsNStructure();</param>
+            <param name="UserID">发信人ID</param>
+            <param name="CnName">发信人</param>
+            <param name="Remark">备注，没有为空</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowFileList(YYControls.SmartGridView,System.String,System.String)">
+            <summary>
+            显示单据所带的附件
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">功能ID</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowFileListExt(YYControls.SmartGridView,System.String,System.String)">
+            <summary>
+            显示单据所带的附件
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">功能ID</param>
+             <param name="return">有数据反回true,没有数据返回false</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowFileList(YYControls.SmartGridView,System.String,System.String,System.String)">
+            <summary>
+            显示单据所带的附件
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">功能ID</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowDCFileList(YYControls.SmartGridView,System.String,System.String,System.String)">
+            <summary>
+            修改调查显示的附件
+            modi:guozg
+            date:2009-04-27
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">功能ID</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.SaveFiles(System.String,System.String,System.String,System.String,System.Web.UI.WebControls.FileUpload,System.Web.UI.WebControls.FileUpload,System.Web.UI.WebControls.FileUpload,System.Web.UI.WebControls.FileUpload,System.Web.UI.WebControls.FileUpload)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.ResponseFile(System.Web.HttpRequest,System.Web.HttpResponse,System.String,System.String,System.Int64)">
+            <summary>
+            文件下载
+            </summary>
+            <param name="_Request">Page.Request</param>
+            <param name="_Response">Page.Response</param>
+            <param name="_fileName">下载后保存的文件名</param>
+            <param name="_fullPath">下载路径</param>
+            <param name="_speed">下载速度</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.SetTimeDropDownList(System.Web.UI.WebControls.DropDownList,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.SetTimeDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.Int32)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.GetMonthDropDown(System.Web.UI.WebControls.DropDownList,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.DeleteLastChar(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetYearsDropDownList(System.Web.UI.WebControls.DropDownList,System.Int32,System.Int32)">
+            <summary>
+            年份下拉
+            </summary>
+            <param name="dlist"></param>
+            <param name="StartYear">开始年</param>
+            <param name="EndYear">结束年</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetYearsDropDownList(System.Web.UI.WebControls.DropDownList,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            年份下拉
+            </summary>
+            <param name="dlist"></param>
+            <param name="StartYear">开始年</param>
+            <param name="EndYear">结束年</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetMonthsDropDownList(System.Web.UI.WebControls.DropDownList,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            月份下拉
+            </summary>
+            <param name="dlist"></param>
+            <param name="StartYear">开始月</param>
+            <param name="EndYear">结束月</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.SetMonthsSelectDropDownList(System.Web.UI.WebControls.DropDownList,System.Int32,System.Int32,System.Int32)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetCallTypeTextByID(System.String)">
+            <summary>
+            根据提醒方式ID,取的对应名称
+            </summary>
+            <param name="CallType">ID,用“，”号格开</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetAppFunDropDownList(System.Web.UI.WebControls.DropDownList)">
+            <summary>
+            审批模块选择
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetAppFunDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            审批模块选择
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetAppFunNotFreeDropDownList(System.Web.UI.WebControls.DropDownList,System.String)">
+            <summary>
+            审批模块选择
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.CheckGridVew(System.Web.UI.WebControls.GridView,System.Int32,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowAssigns(System.Web.UI.WebControls.TextBox,System.Web.UI.WebControls.HiddenField,System.String,System.String)">
+            <summary>
+            显示权限范围
+            </summary>
+            <param name="txtAsgName">权限输入框</param>
+            <param name="hfAsgnsID">权限ID</param>
+            <param name="MID">模块ID</param>
+            <param name="ID">单据ID</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.ChangeSelectID(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.ChangeFilialeSelectID(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.CheckOrderAcl(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            验证普通单据的访问权限
+            </summary>
+            <param name="MID">模块ID</param>
+            <param name="ID">单据ID</param>
+            <param name="UserID">用户ID</param>
+            <param name="DeptID">部门ID</param>
+            <param name="FilialeID">公司ID</param>
+            <param name="BoName">功能表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.CheckOrderAcl(System.Data.DataView,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            验证单据数据权限
+            </summary>
+            <param name="UserAcldv">权限集</param>
+            <param name="DocID">单据ID</param>
+            <param name="MID">模块ID</param>
+            <param name="status">状态</param>
+            <param name="FunID">管理功能ID</param>
+            <param name="UserID">用户ID</param>
+            <param name="DeptID">部门ID</param>
+            <param name="FilialeID">公司ID</param>
+            <param name="BoName">数据表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.AddSysLogs(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String)">
+             <summary>
+            增加登录日志
+             </summary>
+             <param name="FunID">功能</param>
+             <param name="FunName">功能名称</param>
+             <param name="UserName">用户名</param>
+             <param name="UserID">用户ID</param>
+             <param name="CnName">姓名</param>
+             <param name="Dept">部门</param>
+             <param name="DeptID">部门ID</param>
+             <param name="FilialeID">公司ID</param>
+             <param name="LoginTime">登录时间</param>
+             <param name="IpAddr">IP</param>
+             <param name="ComputerName">电脑名称</param>
+             <param name="LogoutTime">退出时间</param>
+             <param name="SysFlag">系统分类</param>
+             <param name="OthersFlag">其它分类</param>
+             <returns>反回日志ID</returns>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.EmcCommon.UpdateSysLogs(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.EmcCommon.NewButton(System.String,System.String)">
+            <summary>
+            建立按扭
+            </summary>
+            <param name="btnID"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SetButton(System.Web.UI.WebControls.Button)">
+            <summary>
+            设置按扭
+            </summary>
+            <param name="btnID"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.CheckOutAssetsStocksQty(System.String,System.String,System.String)">
+            <summary>
+            验证库存数是否满足出库数量
+            </summary>
+            <param name="id">主表ID</param>
+            <param name="tbname">子表名</param>
+            <param name="numfield">子表数量字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetProblemTypeName(System.String)">
+            <summary>
+            取的试题分类名称据分类ID
+            </summary>
+            <param name="ProblemType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetSystemValue(System.String,System.String)">
+            <summary>
+            取的系统参数ID名称据分类名称
+            </summary>
+            <param name="RefValue"></param>
+            <param name="RefValueCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetBaseTextByID(System.String)">
+            <summary>
+            取的基础数据文件值根据基础数据ID
+            </summary>
+            <param name="RefValue"></param>
+            <param name="RefValueCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetSystemText(System.String,System.String)">
+            <summary>
+            取的系统参数名称据分类ID
+            </summary>
+            <param name="RefValue"></param>
+            <param name="RefValueCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SendMail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.ArrayList)">
+            <summary>
+            发邮件
+            </summary>
+            <param name="sendusername">发件帐号</param>
+            <param name="sendpassword">密码</param>
+            <param name="smtpServer">smtpserver</param>
+            <param name="From">发件人</param>
+            <param name="To">收件人</param>
+            <param name="Cc">抄送</param>
+            <param name="Bcc">暗送</param>
+            <param name="Subject">主题</param>
+            <param name="Body">内容</param>
+            <param name="BodyFormat">格式html/text</param>
+            <param name="atts">附件</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetMailAccountByUid(System.String)">
+            <summary>
+            取的发邮件帐号
+            </summary>
+            <param name="Uid"></param>
+            <returns>hashtable key: MyMail Password Pop3Server</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SendMail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.ArrayList)">
+            <summary>
+            用公共邮箱发邮件
+            </summary>
+            <param name="From"></param>
+            <param name="To"></param>
+            <param name="Cc"></param>
+            <param name="Bcc"></param>
+            <param name="Subject"></param>
+            <param name="Body"></param>
+            <param name="BodyFormat"></param>
+            <param name="atts"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetCallTypeCheckBoxList(System.Web.UI.WebControls.CheckBoxList,System.Web.UI.WebControls.DropDownList,System.Web.UI.WebControls.DropDownList)">
+            <summary>
+            显示单据提醒方式，提醒周期
+            </summary>
+            <param name="cblList"></param>
+            <param name="ddlReCall">重复提醒时间</param>
+            <param name="ddlCallTime">提前提醒时间</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowCallTypeCheckBoxList(System.Web.UI.WebControls.CheckBoxList,System.String,System.String,System.String,System.Web.UI.WebControls.DropDownList,System.Web.UI.WebControls.DropDownList)">
+            <summary>
+            显示页面中设置多选框的当前选项
+            </summary>
+            <param name="cblList"></param>
+            <param name="AppID">系统ID</param>
+            <param name="ModulesID">模块ID</param>
+            <param name="DocID">单据ID</param>
+            <param name="ddlReCall">重复提醒时间</param>
+            <param name="ddlCallTime">提前提醒时间</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SaveCallType(System.Web.UI.WebControls.CheckBoxList,System.String,System.String,System.String,System.Web.UI.WebControls.DropDownList,System.Web.UI.WebControls.DropDownList)">
+            <summary>
+            保存单据提醒方式
+            </summary>
+            <param name="cblList"></param>
+            <param name="AppID"></param>
+            <param name="ModulesID"></param>
+            <param name="DocID"></param>
+            <param name="ddlReCall"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.CheckCallType(System.String,System.String)">
+            <summary>
+            验证单据提醒方式
+            </summary>
+            <param name="CallType"></param>
+            <param name="CallTypes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SendMsg(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            发送信息
+            </summary>
+            <param name="msg">消息及邮件内容</param>
+            <param name="smsmsg">短信内容</param>
+            <param name="UserIds">用户ID,用“，”隔开</param>
+            <param name="calltype">提醒方式，用“，”隔开</param>
+            <param name="SendUserID">发信人ID</param>
+            <param name="SendCnName">发信人</param>
+            <param name="Flag">0业务发生时产生，1系统提醒产生</param>
+            <param name="AppID">系统ID</param>
+            <param name="ModulesID">模块ID</param>
+            <param name="DocID">单据ID</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SendMsg(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            发送信息
+            </summary>
+            <param name="msg">消息及邮件内容</param>
+            <param name="smsmsg">短信内容</param>
+            <param name="UserIds">用户ID,用“，”隔开</param>
+            <param name="calltype">提醒方式，用“，”隔开</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.SaveCallList(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            保存提醒队列
+            </summary>
+            <param name="CallType">提方式0消息,1短信,2邮件</param>
+            <param name="AppID">系统ID</param>
+            <param name="ModulesID">模块ID</param>
+            <param name="DocID">单据ID</param>
+            <param name="CallTypeTime">提醒时间</param>
+            <param name="Flag">0 业务发生时产生，1 工作开始前提醒，3 结束前提醒产生， 2 周期提醒</param>
+            <param name="UserID">发信人ID</param>
+            <param name="CnName">发信人</param>
+            <param name="UserContact">发信人Email</param>
+            <param name="ContactIDs">收信人ID,手机，Email</param>
+            <param name="ContactNames">收信人姓名</param>
+            <param name="Status">状态：0未发，1 已发</param>
+            <param name="FlowID">任务流程序号 ，为-1时增加消息记录</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetEndDateTime(System.String,System.String,System.Single,System.String,System.String)">
+            <summary>
+            根据开始时间，时间跨度，取的结束时间
+            </summary>
+            <param name="sd">开始日期</param>
+            <param name="st">开始时间</param>
+            <param name="hh">时间跨度,小时</param>
+            <param name="TimeUnit">时间单位,小时/天</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetTimeSpan(System.DateTime,System.DateTime,System.String)">
+            <summary>
+            两个日期时间差
+            </summary>
+            <param name="dt1">开始时间</param>
+            <param name="dt2">结束时间</param>
+            <param name="flag">返回值差值 标志：DD 天，HH 小时，NN 分钟，SS 秒</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.IsHoliday(System.String,System.String,System.DateTime)">
+            <summary>
+            是否休息日
+            </summary>
+            <param name="SysWeekRest0">休周六 0</param>
+            <param name="SysWeekRest6">休周日 6</param>
+            <param name="dt">当前时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetShortHHMM(System.DateTime)">
+            <summary>
+            取的短时间 HHMM
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetDbNameDropDownList(System.Web.UI.WebControls.DropDownList)">
+            <summary>
+            初始化数据库下拉列表的值
+            </summary>
+            <param name="ddlList">DropDownList</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.ShowFileListAndPic(YYControls.SmartGridView,YYControls.SmartGridView,System.String,System.String)">
+            <summary>
+            显示单据所带的附件
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">功能ID</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetProvinceCity(System.String)">
+            <summary>
+            默认省市
+            </summary>
+            <param name="agentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcCommon.GetSerialNumber(System.String)">
+            <summary>
+            生成充值流水号格式：8位日期加5位顺序号，如20140530000001。
+            </summary>
+            <param name="serialNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcDetailPage.VtCloseClientEvent">
+            <summary>
+            关闭窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcDetailPage.VtCloseFreshClientEvent">
+            <summary>
+            表单修改后的 关闭窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcDetailPage.VtReturnClientEvent">
+            <summary>
+            返回窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcDetailPage.VtInitBaseDetailToolsBars">
+            <summary>
+            初始化基础详细工具栏，打印，刷新，关闭，帮助
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcApproveBasePage.VtReturnClientEvent">
+            <summary>
+            返回窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcApproveBasePage.VtButtonAndAccess(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            验证权限及审批
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">功能ID</param>
+            <param name="status">审批状态</param>
+            <param name="FunID">功能管理ID</param>
+            <param name="creator">单据建立者ID</param>
+            <param name="UserID">申请人ID</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcApproveBasePage.GetAppInfoHash(System.String,System.String,System.String)">
+            <summary>
+            执行审批及获取审批结论
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">模块ID</param>
+            <param name="AuditSign">审批结论</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataAssignWhere(System.String,System.String,System.String,System.String)">
+            <summary>
+            取的分配权限范围条件
+            </summary>
+            <param name="UserID"></param>
+            <param name="DeptID"></param>
+            <param name="FilialeID"></param>
+            <param name="MID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataAllAssignWhere(System.String,System.String,System.String,System.String)">
+            <summary>
+            取的分配权限范围条件,如果是集团共享就不要加部门
+            </summary>
+            <param name="UserID"></param>
+            <param name="DeptID"></param>
+            <param name="FilialeID"></param>
+            <param name="MID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataAllAssignWhere(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            取的分配权限范围条件,有文件夹
+            </summary>
+            <param name="UserID"></param>
+            <param name="DeptID"></param>
+            <param name="FilialeID"></param>
+            <param name="MID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataAclWhere(System.String,System.String,System.String,System.String)">
+            <summary>
+            取的数据权限范围条件
+            </summary>
+            <param name="UserID"></param>
+            <param name="DeptID"></param>
+            <param name="FilialeID"></param>
+            <param name="MID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataAclWhere(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            取的数据权限范围条件
+            </summary>
+            <param name="UserID"></param>
+            <param name="DeptID"></param>
+            <param name="FilialeID"></param>
+            <param name="MID"></param>
+            <param name="DeptAlias">部门所在表的别名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataDeptManagerWhere(System.String,System.String,System.String)">
+            <summary>
+            取的用户任责的部门经理所属ID
+            </summary>
+            <param name="UserID"></param>
+            <param name="FilialeID"></param>
+            <param name="DeptAlias">部门所在表的别名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataUserPostWhere(System.String,System.String,System.String)">
+            <summary>
+            取的用户岗位ID
+            </summary>
+            <param name="UserID"></param>
+            <param name="FilialeID"></param>
+            <param name="DeptAlias">岗位所在表的别名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataSignsWhere(System.String,System.String)">
+            <summary>
+            取的签收人条件
+            </summary>
+            <param name="UserID"></param>
+            <param name="MID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.GetDataBoWhere(System.String)">
+            <summary>
+            取单据所属人条件
+            </summary>
+            <param name="UserID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.CheckDataAcl(System.Web.HttpResponse,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>    
+            单据数据权限验证，不通过直接提示
+            </summary>
+            <param name="_Response"></param>
+            <param name="BoName"></param>
+            <param name="DocID"></param>
+            <param name="MID"></param>
+            <param name="UserID"></param>
+            <param name="DeptID"></param>
+            <param name="FilialeID"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.DataAcl.CheckDataAcl(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>    
+            单据数据权限验证，不通过返回
+            </summary>
+            <param name="_Response"></param>
+            <param name="BoName"></param>
+            <param name="DocID"></param>
+            <param name="MID"></param>
+            <param name="UserID"></param>
+            <param name="DeptID"></param>
+            <param name="FilialeID"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcListBasePage.VtNew">
+            <summary>
+            新建
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcListBasePage.VtEdit">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EmcListBasePage.VtNewClientEvent">
+            <summary>
+            新建军窗口事件
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.EbsCommon.GetMemberModulsNameByMID(System.String)">
+            <summary>
+            根据MID取的会员中心模块名称
+            </summary>
+            <param name="MID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EbsCommon.GetFlvShow(System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            取的flv 格式播放器
+            </summary>
+            <param name="flvpath"></param>
+            <param name="flvpath">是否需要加水印</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EbsCommon.GetFlvShow(System.String,System.Boolean,System.String,System.String,System.String,System.String)">
+            <summary>
+            取的flv 格式播放器
+            </summary>
+            <param name="flvpath"></param>
+            <param name="flvpath">是否需要加水印</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EbsCommon.GetSyPic">
+            <summary>
+            取的水印
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.EbsCommon.outSQL(System.String)">
+            <summary>
+            格式化字符串,是inSQL的反向
+            </summary>
+            <param name="formatStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.ConnOthersSysDb.#ctor(System.String)">
+            <summary>
+            取的数据库连接串
+            </summary>
+            <param name="DbName"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.ConnOthersSysDb.Query(System.String)">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.ConnOthersSysDb.Query(System.String,System.String)">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+             <param name="tablename">dataset中的表名</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.ConnOthersSysDb.RunProcedure(System.String,System.Data.IDataParameter[],System.String)">
+            <summary>
+            执行存储过程
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <param name="tableName">DataSet结果中的表名</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.ConnOthersSysDb.BuildQueryCommand(System.Data.SqlClient.SqlConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            构建 SqlCommand 对象(用来返回一个结果集，而不是一个整数值)
+            </summary>
+            <param name="connection">数据库连接</param>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>SqlCommand</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.ConnOthersSysDb.RunProcedure(System.String,System.Data.IDataParameter[])">
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.ConnOthersSysDb.BuildIntCommand(System.Data.SqlClient.SqlConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            创建 SqlCommand 对象实例(用来返回一个整数值)	
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>SqlCommand 对象实例</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DoAppFlow.CheckCurApproval(System.String,System.String,System.String)">
+            <summary>
+            验证是否当前审批人
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">模块ID</param>
+            <param name="UserID">用户ID</param>
+            <returns>是当前审批人 true</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.DoAppFlow.GetCurAuditDept(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            取当前审批部门ID
+            </summary>
+            <param name="UpAuditNum">递增数量</param>
+            <param name="DeptID">申请人部门ID</param>
+            <param name="level">计数器</param>
+            <param name="FilialeID">公司ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.AppFlow.SetStatusName(System.String,System.Web.UI.WebControls.TextBox)">
+            <summary>
+            设置审批状态文本框内容
+            </summary>
+            <param name="status">状态ID</param>
+            <param name="txtBox">审批状态文本框</param>
+        </member>
+        <!-- 对于成员“M:SfSoft.SfEmc.AppFlow.GetAuditUserID(System.String,System.String,System.String,System.String,System.String,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SfSoft.SfEmc.AppFlow.GetAuditUserIDApp(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            取的第一级审批人，有条件单据使用
+            </summary>
+            <param name="MID">功能ID</param>
+            <param name="UserID">用户ID</param>
+            <param name="AuditUserID">审批人ID</param>
+            <param name="DeptID">部门ID</param>
+            <param name="FilialeID">公司ID</param>
+            <param name="AuditClass">审批级别</param>
+            <param name="DocID">单据ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.AppFlow.GetAuditUserIDCondition(System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            取的第一级审批人,有条件
+            </summary>
+            <param name="MID">功能ID</param>
+            <param name="UserID">用户ID</param>
+            <param name="AuditUserID">审批人ID</param>
+            <param name="DeptID">部门ID</param>
+            <param name="FilialeID">公司ID</param>
+            <param name="AuditClass">审批级别</param>
+            <param name="ConditionValue">条件值,hashtable类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.AppFlow.GetDocAppInfo(System.String,System.String)">
+            <summary>
+            取得单据审批信息
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="BoName">表名</param>
+            <param name="ConditionFiled">条件字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.AppFlow.DoAppBo(System.String,System.String,System.String)">
+            <summary>
+            审批业务
+            </summary>
+            <param name="DocID">单据ID</param>
+            <param name="MID">功能ID</param>
+            <param name="DoStatus">审批状态</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.AppFlow.SendAppMsn(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+             发送申请审批消息
+            </summary>
+            <param name="msg">提示内容</param>
+            <param name="ObjName">功能名</param>
+            <param name="ObjNo">单据号</param>
+            <param name="ReqDate">提交日期</param>
+            <param name="StatusName">状态名</param>
+            <param name="CnName">申请人</param>
+            <param name="UserID">申请人ID</param>
+            <param name="AuditName">审批人</param>
+            <param name="AuditUserID">审批人ID</param>
+            <param name="ObjPriority">重要性</param>
+            <param name="Remark">申请备注</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.AppFlow.SendDoAppMsn(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+             发送审批消息
+            </summary>
+            <param name="msg">提示内容</param>
+            <param name="ObjName">功能名</param>
+            <param name="ObjNo">单据号</param>
+            <param name="AuditDate">审批日期</param>
+            <param name="StatusName">状态名</param>
+            <param name="CnName">申请人</param>
+            <param name="UserID">申请人ID</param>
+            <param name="AuditName">审批人</param>
+            <param name="AuditUserID">审批人ID</param>
+            <param name="ObjPriority">重要性</param>
+            <param name="Remark">申请备注</param>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ListToJson``1(System.Collections.Generic.IList{``0},System.String)">
+            <summary>
+            List转成json
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="jsonName"></param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ListToJson``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            List转成json
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ToJson(System.Object)">
+            <summary>
+            对象转换为Json字符串
+            </summary>
+            <param name="jsonObject">对象</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ToJson(System.Collections.IEnumerable)">
+            <summary>
+            对象集合转换Json
+            </summary>
+            <param name="array">集合对象</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ToArrayString(System.Collections.IEnumerable)">
+            <summary>
+            普通集合转换Json
+            </summary>
+            <param name="array">集合对象</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ToJson(System.Data.DataTable)">
+            <summary>
+            Datatable转换为Json
+            </summary>
+            <param name="table">Datatable对象</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ToJson(System.Data.DataTable,System.String)">
+            <summary>
+            DataTable转成Json
+            </summary>
+            <param name="jsonName"></param>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ToJson(System.Data.Common.DbDataReader)">
+            <summary>
+            DataReader转换为Json
+            </summary>
+            <param name="dataReader">DataReader对象</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.ToJson(System.Data.DataSet)">
+            <summary>
+            DataSet转换为Json
+            </summary>
+            <param name="dataSet">DataSet对象</param>
+            <returns>Json字符串</returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.String2Json(System.String)">
+            <summary>
+            过滤特殊字符
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FormatToJson.StringFormat(System.String,System.Type)">
+            <summary>
+            格式化字符型、日期型、布尔型
+            </summary>
+            <param name="str"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.fillDropDownList(System.Web.UI.WebControls.DropDownList,System.String,System.String,System.Data.DataSet,System.String,System.Boolean)">
+                     * 初始化基础数据下拉列表的值
+            
+            
+            
+                     * @param ddlList 
+                     * @param ds
+                     * @param dValue
+                     * @param dName
+                     * @Date:  2008-08-11
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.AddDefaultItem(System.Web.UI.WebControls.DropDownList,System.String,System.String,System.Boolean)">
+                     * 增加缺省值
+            
+            
+            
+                     * @param strText
+                     * @param strValue
+                     * @param isSelected  是否选中
+                     * @Date:  2008-08-11
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.SetDownLisSeleted(System.Web.UI.WebControls.DropDownList,System.String)">
+                     * 初始化基础数据下拉列表的值
+            
+            
+            
+                     * @param ddlList 
+                     * @param ds
+                     * @param dValue
+                     * @param dName
+                     * @Date:  2008-08-11
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.GetCurrDate">
+            当前日期
+            @Date:  2008-08-11
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.GetCurrMonthFristDay">
+                     * 当月第一天
+            
+            
+            
+                     * @Date:  2008-08-11
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.CalcDepCost(System.Decimal,System.Int32,System.Decimal,System.DateTime)">
+                     * 计算折旧价格
+                     * 
+                     * 按原值的5%提取残值，（原值-残值）/5/12就是一月的折旧费 
+                     * 比如：资产是10000 残值 是500 ，月折旧金额=(10000-500)/(5年* 12 个月)
+                     *  每个资产的折旧年限都不一样的。
+            
+            
+            
+                     * @Date:  2008-08-11
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.FormatString(System.String,System.Int32)">
+                     * 根据给定的长度截取
+            
+            
+                     * 2008-12-20
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.CheckIPAddress(System.String,System.Boolean)">
+            检查IP地址
+            @param IP 
+            @param isIgnoreEmp 是否忽略空 
+            2008-12-20
+        </member>
+        <member name="M:SfSoft.SfEmc.Tools.CalcDays(System.String,System.String,System.String,System.String,System.Double)">
+            返回间隔天数
+            @strBeginDate 开始日期  格式 2009-01-02
+            @strBeginTime 时间      格式  09：15
+            @strEndDate 开始日期  格式 2009-01-02
+            @strEndTime 时间      格式  09：15
+            @dHoursDay  每天工作小时数      
+            2009-03-05
+        </member>
+        <member name="M:SfSoft.SfEmc.FreeForm.CreateTableBaseField(System.String)">
+            <summary>
+            建立表的基础数据
+            </summary>
+            <param name="tablename"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.FreeForm.GetAddStr(System.Data.DataTable,System.String)">
+            <summary>
+            组合增加字符串
+            </summary>
+            <param name="dt"></param>
+            <param name="flag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FreeForm.GetUpdateStr(System.Data.DataTable)">
+            <summary>
+            组合修改字符串
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FreeForm.GetParameters(System.Data.DataTable,System.String,System.Collections.Hashtable)">
+            <summary>
+            生成保存数据参数及值
+            </summary>
+            <param name="dt"></param>
+            <param name="mode"></param>
+            <param name="hash"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FreeForm.NewSaveBo(System.String,System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            新建保存
+            </summary>
+            <param name="boName">表名</param>
+            <param name="includeFd">包含哪些字段，如果有数据，那么mid无效</param>
+            <param name="expFd">排除哪些字段</param>
+            <param name="hash">保存字段内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FreeForm.UpdateSaveBo(System.String,System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            修改保存
+            </summary>
+            <param name="BoName">表名</param>
+            <param name="includeFd">包含哪些字段，如果有数据，那么mid无效</param>
+            <param name="expFd">排除哪些字段</param>
+            <param name="hash">保存字段内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:SfSoft.SfEmc.FreeForm.CreateAutoForm(System.Web.UI.WebControls.PlaceHolder,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            建立表单控件
+            </summary>
+            <param name="phForm"></param>
+            <param name="colnum"></param>
+            <param name="mid"></param>
+            <param name="includeFd"></param>
+            <param name="expFd"></param>
+            <param name="wh"></param>
+            <param name="FilialeID"></param>
+        </member>
+        <member name="M:SfSoft.SfEmc.FreeForm.SetFormValue(System.Web.UI.WebControls.PlaceHolder,System.Data.DataTable,System.String,System.String,System.String,System.String)">
+            <summary>
+            显示数据
+            </summary>
+            <param name="phForm"></param>
+            <param name="dt">表单数据值</param>
+            <param name="mid"></param>
+            <param name="includeFd"></param>
+            <param name="expFd"></param>
+        </member>
+    </members>
+</doc>

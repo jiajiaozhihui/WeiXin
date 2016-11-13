@@ -1,0 +1,10 @@
+bin\Release\SfSoft.DBUtility.dll
+bin\Release\SfSoft.DBUtility.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\SfSoft.DBUtility.dll
+obj\Release\SfSoft.DBUtility.pdb
+bin\Debug\SfSoft.DBUtility.dll
+bin\Debug\SfSoft.DBUtility.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SfSoft.DBUtility.dll
+obj\Debug\SfSoft.DBUtility.pdb
